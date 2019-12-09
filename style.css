@@ -501,14 +501,48 @@ footer form button {
 }
 
 #loot-text {
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 850px;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 614px;
+    border-radius: 50px;
+    padding: 20px;
 }
 
 #loot-text h1 {
     font-family: 'Major Mono Display', monospace;
     font-size: 30px;
     color: whitesmoke;
+}
+
+#loot-text p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+#loot-text h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    color: whitesmoke;
+    text-decoration: line-through;
+}
+
+#loot-text h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 60px;
+    color: red;
+}
+
+#loot-crate i {
+    font-size: 140px;
 }
