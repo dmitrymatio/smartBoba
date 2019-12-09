@@ -29,54 +29,37 @@
                 <i class="fa fa-pinterest"></i>
             </div>
             <nav class="top-nav">
-                <a href="./index.html" class="active-nav">Home</a>
+                <a href="./index.html">Home</a>
                 <a href="./menu.html">Menu</a>
                 <a href="./merch.html">Merch</a>
                 <a href="./crate.html">Loot Crate</a>
                 <a href="./guides.html">Guides</a>
-                <a href="./cart.html">My Cart</a>
+                <a href="./cart.html" class="active-nav">My Cart</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <article class="slider-wrap">
-            <section class="slider" id="slider">
-                <section class="holder">
-                    <figure class="slide" id="slide-0">
-                        <img src="./Assets/wide-bubbletea-cups.jpg">
-                        <figcaption class="caption-text">Welcome to<br>Smart Boba</figcaption>
-                    </figure>
-                    <figure class="slide" id="slide-1">
-                        <img src="./Assets/marble-tapioca.jpg">
-                        <figcaption class="caption-text">Dedicated to serving quality bubble tea</figcaption>
-                    </figure>
-                    <figure class="slide" id="slide-2">
-                        <img src="./Assets/data-tablet.jpg">
-                        <figcaption class="caption-text">Never miss out on the boba trends</figcaption>
-                    </figure>
-                </section>
-            </section>
-            <nav class="slider-nav">
-                <a href="#slide-0" class="active">Slide 0</a>
-                <a href="#slide-1">Slide 1</a>
-                <a href="#slide-2">Slide 2</a>
-            </nav>
-        </article>
+        <article id="cart">
 
-        <article class="article-paragraphs">
-            <section class="masters-text">
-                <figure class="milk-splash">
-                    <img src="./Assets/top-mix-topings.jpg">
-                </figure>
-                <figcaption>At Smart, every drink is hand-crafted by our bubble tea masters. We aim to deliver every customer the perfect drink they have been dreaming of.</figcaption>
+            <section id="list-of-items-in-cart">
+                <h1>Shopping Cart</h1>
+                <ul>
+                    <li>Loot Crate Monthly Subscription</li>
+                </ul>
+                <h2 id="total-cart">Total: $799.99</h2>
+                <h2 id="tax">Tax: $96.00</h2>
+                <h2 id="Total-plus-tax">Total+Tax: ‭$895.99‬</h2>
             </section>
-
-            <section class="trends-text">
-                <figure class="milk-splash">
-                    <img src="./Assets/brown-sugar.jpg">
-                </figure>
-                <figcaption>Interested in the latest bubble tea trend? We got you. Sign up to our <strong>mailing list</strong> below and don't forget to support your favourite drink by ordering one in our store today!</figcaption>
+            <section id="payment-info">
+                <h2>Payment Information</h2>
+                <form id="credit-card">
+                    <input type="text" name="name-on-card" placeholder="Full Name...">
+                    <input type="text" name="card-number" placeholder="Credit Card Number...">
+                    <input type="text" name="ccv" placeholder="CCV...">
+                    <input type="text" name="expiry-date" placeholder="Expiration Date...">
+                    <button>Pay</button>
+                </form>
             </section>
         </article>
 

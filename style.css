@@ -546,3 +546,47 @@ footer form button {
 #loot-crate i {
     font-size: 140px;
 }
+
+#cart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#list-of-items-in-cart {
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#list-of-items-in-cart h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 30px;
+    color: black;
+}
+
+#payment-info {
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#list-of-items-in-cart ul {
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#payment-info {
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+}
