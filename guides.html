@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Smart Boba Shop</title>
+    <link rel='icon' href='./logo/logo-favicon-color.png' type='image/x-icon'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat|Major+Mono+Display|Monoton|Nunito&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+
+
 </head>
 
 <body>
     <header>
         <figure class="logo-boba">
-            <img src="./bubble-tea.png">
-            <p>Smart Boba</p>
+            <img src="./logo/logo-horizontal-bw.png">
         </figure>
         <div class="action-buttons">
             <div class="social-media">
@@ -27,50 +29,67 @@
                 <i class="fa fa-pinterest"></i>
             </div>
             <nav class="top-nav">
-                <a href="#">Home</a>
-                <a>Menu</a>
-                <a>Merch</a>
-                <a>Loot Crate</a>
-                <a>Guides</a>
-                <a>My Cart</a>
+                <a href="./index.html" class="active-nav">Home</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./merch.html">Merch</a>
+                <a href="./crate.html">Loot Crate</a>
+                <a href="./guides.html">Guides</a>
+                <a href="./cart.html">My Cart</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="slider-wrap">
-            <div class="slider" id="slider">
-                <div class="holder">
+        <article class="slider-wrap">
+            <section class="slider" id="slider">
+                <section class="holder">
                     <figure class="slide" id="slide-0">
                         <img src="./Assets/wide-bubbletea-cups.jpg">
-                        <figcaption id="welcome-text">Welcome to<br>Smart Boba</figcaption>
+                        <figcaption class="caption-text">Welcome to<br>Smart Boba</figcaption>
                     </figure>
                     <figure class="slide" id="slide-1">
                         <img src="./Assets/marble-tapioca.jpg">
-                        <figcaption id="masters-text">At Smart, every drink is hand-crafted by our bubble tea masters. We aim to deliver every customer the perfect drink they have been dreaming of. Come visit us at our lower mainland location!</figcaption>
+                        <figcaption class="caption-text">Dedicated to serving quality bubble tea</figcaption>
                     </figure>
                     <figure class="slide" id="slide-2">
                         <img src="./Assets/data-tablet.jpg">
-                        <figcaption id="analytics-text">Welcome to Smart Boba</figcaption>
+                        <figcaption class="caption-text">Never miss out on the boba trends</figcaption>
                     </figure>
-                </div>
-            </div>
+                </section>
+            </section>
             <nav class="slider-nav">
                 <a href="#slide-0" class="active">Slide 0</a>
                 <a href="#slide-1">Slide 1</a>
                 <a href="#slide-2">Slide 2</a>
             </nav>
-        </div>
+        </article>
+
+        <article class="article-paragraphs">
+            <section class="masters-text">
+                <figure class="milk-splash">
+                    <img src="./Assets/top-mix-topings.jpg">
+                </figure>
+                <figcaption>At Smart, every drink is hand-crafted by our bubble tea masters. We aim to deliver every customer the perfect drink they have been dreaming of.</figcaption>
+            </section>
+
+            <section class="trends-text">
+                <figure class="milk-splash">
+                    <img src="./Assets/brown-sugar.jpg">
+                </figure>
+                <figcaption>Interested in the latest bubble tea trend? We got you. Sign up to our <strong>mailing list</strong> below and don't forget to support your favourite drink by ordering one in our store today!</figcaption>
+            </section>
+        </article>
+
     </main>
 
     <footer>
         <nav class="bottom-nav">
-            <a>Home</a>
-            <a>Menu</a>
-            <a>Merch</a>
-            <a>Loot Crate</a>
-            <a>Guides</a>
-            <a>My Cart</a>
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./merch.html">Merch</a>
+            <a href="./crate.html">Loot Crate</a>
+            <a href="./guides.html">Guides</a>
+            <a href="./cart.html">My Cart</a>
         </nav>
 
         <section class="contact-info">
@@ -86,7 +105,7 @@
         <section class="mailing-list">
             <h3>Mailing List</h3>
             <form>
-                <input type="text">
+                <input type="text" placeholder="email adress...">
                 <button>Submit</button>
             </form>
         </section>
@@ -98,3 +117,6 @@
 </body>
 
 </html>
+
+<!-- <a href='https://pngtree.com/so/frame'>frame png from pngtree.com</a> -->
+<!--<a href='https://pngtree.com/so/meteorological phenomenon'>meteorological phenomenon png from pngtree.com</a>-->
