@@ -346,3 +346,169 @@ footer form button {
     background-size: 50%;
     background-position: center center;
 }
+
+#brown-sugar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./Assets/menu-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+}
+
+#brown-sugar h1 {
+    width: 40%;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+#item-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+}
+
+#brown-sugar-image {
+    width: 35%;
+    height: 800px;
+    padding: 60px 0;
+}
+
+#brown-sugar-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#brown-sugar-info {
+    font-family: 'Nunito', sans-serif;
+    width: 45%;
+    height: 800px;
+    background-color: rgba(0, 169, 231, 0.5);
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nutrition-facts {
+    margin: 20px;
+    font-size: 20px;
+}
+
+#nutrition-facts h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+
+#trend-data {
+    width: 50%;
+    margin: 20px;
+}
+
+#trend-data img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#trend-data h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+
+#guides {
+    margin: 0;
+    padding: 50px;
+    width: 100%;
+    height: auto;
+    background-image: url(./Assets/guide.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+#guides-container {
+    background-color: rgba(245, 245, 245, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border-radius: 30px;
+}
+
+.guide {
+    width: 50%;
+    height: 300px;
+    background-color: rgba(0, 128, 175, 0.9);
+    margin: 50px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.guide h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 30px;
+    color: whitesmoke;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.guide p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#loot-crate {
+    width: 100%;
+    height: 1750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./Assets/blue-splash.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+#loot-crate img {
+    width: 800px;
+    height: 900px;
+    object-fit: cover;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 500px;
+}
+
+#loot-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loot-text h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 30px;
+    color: whitesmoke;
+}
