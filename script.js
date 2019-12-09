@@ -1,7 +1,5 @@
 let slider = {
 
-    // Not sure if keeping element collections like this
-    // together is useful or not.
     el: {
         slider: $("#slider"),
         allSlides: $(".slide"),
@@ -10,10 +8,8 @@ let slider = {
     },
 
     timing: 800,
-    slideWidth: null, // could measure this
+    slideWidth: null,
 
-    // In this simple example, might just move the
-    // binding here to the init function
     init: function() {
         this.slideWidth = slider.el.allSlides.width();
         this.bindUIEvents();
@@ -28,9 +24,6 @@ let slider = {
         this.el.sliderNav.on("click", "a", function(event) {
             slider.handleNavClick(event, this);
         });
-        // What would be cool is if it had touch
-        // events where you could swipe but it
-        // also kinda snapped into place.
     },
 
     moveSlidePosition: function(event) {
@@ -54,11 +47,8 @@ let slider = {
     changeActiveNav: function(el) {
         this.el.allNavButtons.removeClass("active");
         $(el).addClass("active");
-    }
+    },
 
 };
 
 slider.init();
-
-// https://codepen.io/BaylorRae/pen/ImGBC
-// Originally added click links, so I ported over and re-wrote

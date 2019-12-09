@@ -55,7 +55,7 @@ header nav a:hover {
     transform: scale(1.1);
 }
 
-header nav a:active {
+.active-nav {
     background-color: #eaba8b;
 }
 
@@ -108,31 +108,13 @@ header nav a:active {
     background-color: #FFFC00;
 }
 
-footer {
-    height: 125px;
-    margin: 0;
-    padding: 20px 20px;
-    background: whitesmoke;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-top-style: solid;
-    border-top-width: 1px;
-}
-
-footer nav {
-    display: flex;
-    flex-direction: column;
-}
-
 main {
     display: flex;
     margin: 0;
     background-color: whitesmoke;
     flex-direction: column;
     align-items: center;
-    height: 1000px;
+    height: auto;
 }
 
 .slider-wrap {
@@ -165,7 +147,7 @@ main {
     object-fit: cover;
 }
 
-#welcome-text {
+.caption-text {
     font-family: 'Major Mono Display', monospace;
     position: absolute;
     color: whitesmoke;
@@ -173,17 +155,6 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#masters-text {
-    font-family: 'Nunito', sans-serif;
-    position: absolute;
-    color: whitesmoke;
-    font-size: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
 }
 
 .slide:before {
@@ -202,8 +173,8 @@ main {
 }
 
 .slider-nav a {
-    width: 10px;
-    height: 10px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     background: #ddd;
     overflow: hidden;
@@ -212,5 +183,111 @@ main {
 }
 
 .slider-nav a.active {
-    background: #999;
+    background: #eaba6b;
+}
+
+.article-paragraphs {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 1400px;
+}
+
+.article-paragraphs section {
+    width: 100%;
+    height: 700px;
+}
+
+.masters-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trends-text {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.article-paragraphs figure {
+    width: 800px;
+    height: 700px;
+    background-image: url(./Assets/milk-splash.png);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.article-paragraphs figure img {
+    width: 350px;
+    height: 350px;
+    margin: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.article-paragraphs figcaption {
+    width: 700px;
+    font-family: 'Nunito', sans-serif;
+    color: #00ABE7;
+    font-size: 30px;
+    text-align: left;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+footer {
+    height: 125px;
+    margin: 0;
+    padding: 20px 20px;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    margin: 0;
+}
+
+footer p {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+footer form input {
+    padding: 10px;
+    font-size: 20px;
+}
+
+footer form button {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    margin: 0;
+    color: whitesmoke;
+    background-color: rgba(0, 128, 175, 1);
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-decoration: none;
 }
