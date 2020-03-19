@@ -187,15 +187,16 @@ main {
 }
 
 .article-paragraphs {
-    margin-top: 50px;
+    margin: 150px 0;
     display: flex;
     flex-direction: column;
-    height: 1400px;
+    height: 1750px;
 }
 
 .article-paragraphs section {
     width: 100%;
-    height: 700px;
+    height: 800px;
+    margin: 50px 0;
 }
 
 .masters-text {
@@ -212,29 +213,35 @@ main {
 
 .article-paragraphs figure {
     width: 800px;
-    height: 700px;
-    background-image: url(./Assets/milk-splash.png);
-    background-size: cover;
+    height: 800px;
+    border-radius: 50%;
     text-align: center;
     position: relative;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, .5);
 }
 
 .article-paragraphs figure img {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     margin: 0;
     object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 50%;
     border-style: solid;
     border-width: 1px;
     border-color: black;
 }
 
+.masters-text figure img {
+    object-fit: none;
+}
+
 .article-paragraphs figcaption {
-    width: 700px;
+    width: 600px;
+    margin: 0 50px;
     font-family: 'Nunito', sans-serif;
     color: #00ABE7;
     font-size: 30px;
@@ -243,6 +250,8 @@ main {
     border-style: solid;
     border-width: 1px;
     border-color: black;
+    background-color: rgba(245, 245, 245, 0.8);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, .5);
 }
 
 footer {
@@ -458,11 +467,17 @@ footer form button {
 
 .guide {
     width: 50%;
-    height: 300px;
+    height: auto;
     background-color: rgba(0, 128, 175, 0.9);
     margin: 50px;
     border-radius: 30px;
     padding: 30px;
+}
+
+.guide img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
 }
 
 .guide h1 {
@@ -498,10 +513,12 @@ footer form button {
     border-radius: 50px;
     position: relative;
     margin-top: 500px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
 }
 
 #loot-text {
-    background-color: rgba(0, 0, 0, 0.3);
     height: 825px;
     width: 750px;
     display: flex;
@@ -516,24 +533,23 @@ footer form button {
     margin-top: 614px;
     border-radius: 50px;
     padding: 20px;
+    color: whitesmoke;
+    text-shadow: 0 3px 3px black;
 }
 
 #loot-text h1 {
     font-family: 'Major Mono Display', monospace;
     font-size: 30px;
-    color: whitesmoke;
 }
 
 #loot-text p {
     font-family: 'Nunito', sans-serif;
     font-size: 30px;
-    color: whitesmoke;
 }
 
 #loot-text h2 {
     font-family: 'Nunito', sans-serif;
     font-size: 40px;
-    color: whitesmoke;
     text-decoration: line-through;
 }
 
@@ -549,21 +565,21 @@ footer form button {
 
 #cart {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    height: 600px;
+    height: auto;
     justify-content: space-around;
     align-items: center;
+    margin: 50px 0;
 }
 
 #list-of-items-in-cart {
     width: 50%;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 50px;
+    height: 100%;
 }
 
 #list-of-items-in-cart h1 {
@@ -572,21 +588,107 @@ footer form button {
     color: black;
 }
 
+#list-of-items-in-cart h2 {
+    align-self: flex-end;
+    margin: 0;
+    padding: 5px;
+}
+
 #payment-info {
-    width: 50%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#payment-info form {
+    display: flex;
+    flex-direction: column;
     border-style: solid;
     border-color: black;
     border-width: 1px;
+    padding: 20px;
+    background-color: rgba(0, 128, 175, 0.9);
+    border-radius: 15px;
+}
+
+#payment-info form input {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#payment-info form button {
+    padding: 10px;
 }
 
 #list-of-items-in-cart ul {
-    width: 50%;
+    width: 100%;
+    height: auto;
     border-style: solid;
     border-color: black;
     border-width: 1px;
+    overflow-y: scroll;
+    overflow-x: none;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    background-color: whitesmoke;
+}
+
+#list-of-items-in-cart ul li {
+    padding: 25px 0;
+    font-size: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#list-of-items-in-cart ul li span i {
+    font-size: 40px;
+}
+
+#list-of-items-in-cart ul li img {
+    height: 100%;
+    width: 100px;
+    object-fit: cover;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
 }
 
 #payment-info {
     font-family: 'Nunito', sans-serif;
     padding: 20px;
+}
+
+.bottom-nav {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-nav a {
+    width: 33%;
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.bottom-nav a:hover {
+    background-color: #eaba8b;
+    color: whitesmoke;
 }
